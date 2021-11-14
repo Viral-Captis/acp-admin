@@ -38,6 +38,7 @@ gem 'webpacker'
 gem 'importmap-rails'
 gem 'hotwire-rails'
 gem 'tailwindcss-rails'
+gem 'turbo-rails', '~> 0.8' # 7.1.1 yanked
 
 gem 'sidekiq'
 gem 'sidekiq-scheduler'

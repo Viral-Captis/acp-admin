@@ -1,0 +1,26 @@
+h1 class="mt-1 mb-8 text-xl sm:text-2xl font-extrabold text-gray-900 dark:text-gray-100"
+  = t('activerecord.models.shop.one')
+
+h2 class="mt-8 text-lg font-bold text-gray-900 dark:text-gray-100"
+  = t('members.shop.products.index.delivery', date: l(delivery.date))
+
+- case order.state
+- when Shop::Order::CART_STATE
+  p class="mt-2"
+    = t('members.shop.products.index.closing_at_html', date: l(delivery.shop_closing_at, format: :long))
+    = ' '
+    = t('.finalize_order')
+
+  h2 class="mt-8 text-lg font-bold text-gray-900 dark:text-gray-100"
+    = t('.cart')
+
+  = turbo_frame_tag 'order' do
+    = render partial: 'members/shop/orders/order'
+- when Shop::Order::PENDING_STATE
+  p class="mt-2"
+    = t('.pending_order_html', date: l(delivery.shop_closing_at, format: :long))
+
+  h2 class="mt-8 text-lg font-bold text-gray-900 dark:text-gray-100"
+    = Shop::Order.model_name.human
+
+  = render partial: 'members/shop/orders/pending_order'

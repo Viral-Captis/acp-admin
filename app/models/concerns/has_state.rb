@@ -1,6 +1,7 @@
 module HasState
   extend ActiveSupport::Concern
 
+
   class_methods do
     def has_states(*states)
       states.each do |state|
@@ -19,6 +20,6 @@ module HasState
   end
 
   def invalid_transition(action)
-    raise "invalid transition '#{action}' on #{self.class.name}(#{id}) in state '#{state}'"
+    raise InvalidTransitionError, "invalid transition '#{action}' on #{self.class.name}(#{id}) in state '#{state}'"
   end
 end

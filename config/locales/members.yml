@@ -116,8 +116,8 @@ _:
           _de: Falls Sie mit dem Auto kommen und die Fahrt teilen wollen, kreuzen Sie bitte das Kästschen hier unten an. Die anderen Mitglieder, die an diesem Tag angemeldet sind, werden Ihre Telefonnummer sowie den Abfahrtsort bekommen.
           _fr: Merci de cocher la case ci-dessous si vous vous déplacez en voiture et désirez partager le voyage. Votre numéro de téléphone ainsi que votre ville de départ seront partagés avec les autres membres inscrits le même jour.
           _it: Seleziona la casella sottostante se ti sposti in auto e desideri condividere il viaggio. Il tuo numero di telefono e il luogo di partenza saranno condivisi con altri soci registrati per lo stesso giorno.
-        coming_activity_participation_cannot_be_cancel_explanation/basket_preparation:
-          _de: Aus Organisationsgründe, die Anmeldungen zu die Taschen befüllung, die in weniger als %{days_count} Tagen stattfinden, können nicht mehr abgesagt werden. Bei einer Verhinderung, bitte uns schreiben %{contact_link}.
+        ? coming_activity_participation_cannot_be_cancel_explanation/basket_preparation
+        : _de: Aus Organisationsgründe, die Anmeldungen zu die Taschen befüllung, die in weniger als %{days_count} Tagen stattfinden, können nicht mehr abgesagt werden. Bei einer Verhinderung, bitte uns schreiben %{contact_link}.
           _fr: Pour des raisons d'organisation, les inscriptions aux mises en panier qui ont lieu dans moins de %{days_count} jours ne peuvent plus être annulées. En cas d'empêchement, merci de nous %{contact_link}.
           _it: Per motivi organizzativi, le iscrizioni per la preparazione delle ceste che avvengono entro %{days_count} giorni non possono essere annullate. In caso di impedimenti gravi grazie per contattarci tempestivamente %{contact_link}.
         coming_activity_participation_cannot_be_cancel_explanation/halfday_work:
@@ -320,6 +320,128 @@ _:
           _de: Alte Lieferungen (%{count})
           _fr: Anciennes livraisons (%{count})
           _it: Vecchie consegne(%{count})
+    shop:
+      products:
+        variant:
+          live_stock:
+            one:
+              _de: TODO SHOP
+              _fr: "%{count} disponible"
+              _it: TODO SHOP
+            other:
+              _de: TODO SHOP
+              _fr: "%{count} disponibles"
+              _it: TODO SHOP
+            zero:
+              _de: TODO SHOP
+              _fr: "%{count} disponible"
+              _it: TODO SHOP
+          add_to_basket:
+            _de: TODO SHOP
+            _fr: Ajouter au panier
+            _it: TODO SHOP
+        index:
+          delivery:
+            _de: Lieferung von %{date}
+            _fr: Livraison du %{date}
+            _it: Consegna del %{date}
+          closing_at_html:
+            _de: TODO SHOP
+            _fr: Votre commande peut-être passée ou modifié jusqu'au <u>%{date}</u>.
+            _it: TODO SHOP
+          available_product:
+            _de: TODO SHOP
+            _fr: Produits disponibles
+            _it: TODO SHOP
+          all_producers:
+            _de: TODO SHOP
+            _fr: Tous les producteurs
+            _it: TODO SHOP
+      orders:
+        confirm:
+          notice:
+            _de: TODO SHOP
+            _fr: Merci pour votre commande!
+            _de: TODO SHOP
+        order:
+          submit_order:
+            _de: TODO SHOP
+            _fr: Commander
+            _it: TODO SHOP
+          total:
+            _de: TODO SHOP
+            _fr: Total
+            _it: TODO SHOP
+          stock:
+            _de: TODO SHOP
+            _fr: "%{count} en stock"
+            _it: TODO SHOP
+          continue_shopping:
+            _de: TODO SHOP
+            _fr: "Continuer les achats"
+            _it: TODO SHOP
+          destroy_cart:
+            _de: TODO SHOP
+            _fr: Vider le panier d'achats
+            _it: TODO SHOP
+          destroy_cart_confirm:
+            _de: TODO SHOP
+            _fr: Êtes-vous sûr de vouloir vider le panier d'achats?
+            _it: TODO SHOP
+          order_total_weight:
+            _de: TODO SHOP
+            _fr: Poids total de la commande
+            _it: TODO SHOP
+
+        pending_order:
+          total:
+            _de: TODO SHOP
+            _fr: Total
+            _it: TODO SHOP
+          unconfirm_order:
+            _de: TODO SHOP
+            _fr: Modifier
+            _it: TODO SHOP
+          cancel_order:
+            _de: TODO SHOP
+            _fr: Annuler la commande
+            _it: TODO SHOP
+          order_total_weight:
+            _de: TODO SHOP
+            _fr: Poids total de la commande
+            _it: TODO SHOP
+          cancel_order_confirm:
+            _de: TODO SHOP
+            _fr: Êtes-vous sûr de vouloir annuler la commande?
+            _it: TODO SHOP
+
+
+        show:
+          cart:
+            _de: TODO SHOP
+            _fr: Panier d'achat
+            _it: TODO SHOP
+          finalize_order:
+            _de: TODO SHOP
+            _fr: Merci de finaliser votre commande.
+            _it: TODO SHOP
+
+          pending_order_html:
+            _de: TODO SHOP
+            _fr: Votre commande peut être encore annulée ou modifiée jusqu'au <u>%{date}</u>. Une facture vous sera envoyée par email avant la livraison, merci de la régler rapidement.
+            _it: TODO SHOP
+
+
+        cart:
+          show_basket:
+            _de: TODO SHOP
+            _fr: Voir panier d'achat
+            _it: TODO SHOP
+          no_order_items:
+            _de: TODO SHOP
+            _fr: Panier d'achat vide
+            _it: TODO SHOP
+
     group_buying:
       base:
         show:
@@ -344,9 +466,9 @@ _:
             _fr: Désolé, les commandes ne sont plus possible.
             _it: Spiacenti, gli ordini non sono più possibili.
           order_amount:
-            _de: 'Gesamt: %{amount}'
-            _fr: 'Total: %{amount}'
-            _it: 'Totale: %{amount}'
+            _de: "Gesamt: %{amount}"
+            _fr: "Total: %{amount}"
+            _it: "Totale: %{amount}"
           orderable_until:
             _de: Bestellungen sind geöffnet bis <u>%{date}</u>.
             _fr: Commandes ouvertes jusqu'au <u>%{date}</u>.
@@ -572,9 +694,9 @@ _:
               _fr: Renouveler mon abonnement
               _it: Rinnovare il mio abbonamento
           options_label:
-            _de: 'Ich wünsche:'
-            _fr: 'Je désire:'
-            _it: 'Desidero:'
+            _de: "Ich wünsche:"
+            _fr: "Je désire:"
+            _it: "Desidero:"
           submit:
             _de: Nächster
             _fr: Suivant
